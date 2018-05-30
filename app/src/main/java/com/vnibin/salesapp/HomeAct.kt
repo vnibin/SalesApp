@@ -26,7 +26,7 @@ class HomeAct : AppCompatActivity() {
             for (x in 0..response.length()-1)
                 list.add(response.getJSONObject(x).getString("category"))
 
-            var adp=ArrayAdapter(this,android.R.layout.activity_list_item,list)
+            var adp=ArrayAdapter(this,R.layout.my_textview,list)
             home_cat.adapter=adp
 
 
