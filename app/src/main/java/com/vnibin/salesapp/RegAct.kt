@@ -1,5 +1,6 @@
     package com.vnibin.salesapp
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -9,6 +10,7 @@ import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.squareup.picasso.Downloader
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_reg.*
 
     class RegAct : AppCompatActivity() {
@@ -32,7 +34,11 @@ import kotlinx.android.synthetic.main.activity_reg.*
                     if(response.equals("0"))
                         Toast.makeText(this,"Mobile already added",Toast.LENGTH_LONG).show()
                     else
-                        Toast.makeText(this,"User Successfully added",Toast.LENGTH_LONG).show()
+                    {
+                        UserInfo.mobile=reg_mobile.text.toString()
+                        var i=Intent(this,HomeAct::class.java)
+                        startActivity(i)
+                    }
 
 
 
