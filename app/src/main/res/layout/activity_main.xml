@@ -41,17 +41,17 @@
         android:id="@+id/login_btn"
         android:textColor="#fff"
         android:textSize="22sp"
-       android:gravity="center"
+        android:gravity="center"
         android:background="#0000dd"
         android:text="Login"
-       android:layout_marginLeft="80dp"
+        android:layout_marginLeft="80dp"
         android:layout_marginRight="80dp"
         android:padding="10dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/signup_btn"
+        android:id="@+id/login_signup"
         android:textColor="#fff"
         android:textSize="22sp"
         android:gravity="center"
