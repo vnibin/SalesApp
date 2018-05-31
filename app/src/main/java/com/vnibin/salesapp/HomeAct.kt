@@ -1,5 +1,6 @@
 package com.vnibin.salesapp
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -36,5 +37,13 @@ class HomeAct : AppCompatActivity() {
         })
 
         rq.add(jar)
+
+        home_cat.setOnItemClickListener { adapterView, view, i, l ->
+
+            var cat:String=list[i]
+            var obj=Intent(this,ItemAct::class.java)
+            obj.putExtra("cat",cat)
+            startActivity(obj)
+        }
     }
 }
