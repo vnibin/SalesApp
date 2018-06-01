@@ -1,7 +1,10 @@
 package com.vnibin.salesapp
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.android.volley.Request
@@ -38,5 +41,23 @@ class OrderAct : AppCompatActivity() {
         })
 
         rq.add(jar)
+
+    }
+
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+
+        menuInflater.inflate(R.menu.my_menu,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+
+        if(item?.itemId==R.id.item_menu)
+        {
+            var i=Intent(this,HomeAct::class.java)
+            startActivity(i)
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
