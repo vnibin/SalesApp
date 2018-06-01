@@ -20,7 +20,7 @@ class HomeAct : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         var list=ArrayList<String>()
-       var url:String= "http://192.168.1.10/Companyweb/salesweb/get_cat.php"
+       var url:String= "http://192.168.1.4/Companyweb/salesweb/get_cat.php"
         var rq:RequestQueue=Volley.newRequestQueue(this)
         var jar=JsonArrayRequest(Request.Method.GET,url,null,Response.Listener { response ->
 

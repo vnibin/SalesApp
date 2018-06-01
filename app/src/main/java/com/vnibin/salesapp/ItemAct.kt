@@ -10,7 +10,7 @@ class ItemAct : AppCompatActivity() {
         setContentView(R.layout.activity_item)
 
         var cat:String=intent.getStringExtra("cat")
-        var url:String="http://192.168.1.10/Companyweb/salesweb/get_cat.php?category="+cat
+        var url:String="http://192.168.1.4/Companyweb/salesweb/get_cat.php?category="+cat
 
     }
 }
