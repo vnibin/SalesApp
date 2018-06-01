@@ -18,9 +18,9 @@ class HomeAct : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+        var url:String= "http://192.168.1.4/Companyweb/salesweb/get_cat.php"
 
         var list=ArrayList<String>()
-       var url:String= "http://192.168.1.4/Companyweb/salesweb/get_cat.php"
         var rq:RequestQueue=Volley.newRequestQueue(this)
         var jar=JsonArrayRequest(Request.Method.GET,url,null,Response.Listener { response ->
 
