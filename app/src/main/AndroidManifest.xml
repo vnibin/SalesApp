@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".RegAct" />
         <activity android:name=".HomeAct" />
-        <activity android:name=".ItemAct"></activity>
+        <activity android:name=".ItemAct" />
+        <activity android:name=".OrderAct"></activity>
     </application>
 
 </manifest>
