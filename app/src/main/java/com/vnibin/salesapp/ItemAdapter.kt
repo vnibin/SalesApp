@@ -33,7 +33,9 @@ class ItemHolder(itemview:View):RecyclerView.ViewHolder(itemview)
     {
         itemView.item_name.text=n;
         itemView.item_price.text=p.toString()
-        Picasso.with(itemView.context).load("http://192.168.1.4//Companyweb/salesweb/images/Margarita2_big.jpg"+u).into(itemView.item_photo)
+        var web:String="http://192.168.1.4//Companyweb/salesweb/images/"+u
+       // web=web.replace("","%20")
+        Picasso.with(itemView.context).load(web).into(itemView.item_photo)
     }
 }
 
