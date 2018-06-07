@@ -22,7 +22,8 @@
         <activity android:name=".HomeAct" />
         <activity android:name=".ItemAct" />
         <activity android:name=".OrderAct" />
-        <activity android:name=".TotalAct"></activity>
+        <activity android:name=".TotalAct" />
+        <activity android:name=".ConfirmAct"></activity>
     </application>
 
 </manifest>
